@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/LoginForm.css';
-
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -9,10 +8,23 @@ const LoginForm = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
     // Perform login validation here (e.g., API call)
     if (username === 'kipngenoh' && password === '123') {
-      // Replace 'kipngenoh' and '123' with your actual credentials
-      console.log('Login successful');
+        console.log('Login successful');
+
+          const userData = { username, password };
+      fetch('http://localhost:8000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error('Error saving user data:', error));
+
       navigate('/home'); // Navigate to the home page after successful login
     } else {
       alert('Invalid username or password. Please try again.');
@@ -21,7 +33,7 @@ const LoginForm = () => {
 
   return (
     <div className="login-form">
-     <h3> Welcome to Travelwings!</h3>
+      <h3> Welcome to Travelwings!</h3>
       <h2>Login</h2>
       <h4>Please Enter Your Details</h4>
       <form onSubmit={handleLogin}>

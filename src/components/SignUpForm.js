@@ -35,7 +35,7 @@ const SignUpForm = () => {
       .then(response => response.json())
       .then(data => console.log(data))
       
-      alert('User created successfully!'); // Replace this with your actual user creation logic
+      alert('User created successfully!'); 
       navigate('/login'); // Navigate to the login page after successful sign up
   };
 
