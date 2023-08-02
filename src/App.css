@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* PaymentPage.css */
+
+.Payment-container {
+  /* Set the container's styles here (if needed) */
+}
+
+.Back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles when the button is hovered */
+.Back-button:hover {
+  background-color: #0056b3; /* Slightly darker blue color on hover */
+}
+
+/* Additional styles for disabled button (optional) */
+.Back-button:disabled {
+  background-color: #c0c0c0; /* Grayed out color for disabled button */
+  cursor: not-allowed;
+}

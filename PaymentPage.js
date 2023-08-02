@@ -9,6 +9,9 @@ const PaymentPage = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
+  const handleBackButtonClick = () => {
+    window.history.back(); // Go back to the previous page
+  };
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,6 +35,10 @@ const PaymentPage = () => {
   return (
     <div className='Payment-container'>
       <h2>Payment Details</h2>
+      {/* Back button */}
+      <button className='Back-button' onClick={handleBackButtonClick}>
+        Back
+      </button>
       {paymentSuccess ? (
         <div>
           <p>Payment successful!</p>
