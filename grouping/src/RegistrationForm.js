@@ -11,6 +11,8 @@ function RegistrationForm() {
     email: "",
     password: "",
     confirmPassword: "",
+    passport: "",
+    destination: "",
   });
 
   // Event handler to update the form data when input fields change
@@ -47,6 +49,8 @@ function RegistrationForm() {
       email: "",
       password: "",
       confirmPassword: "",
+      passport: "",
+      destination: "",
     });
   };
 
@@ -119,9 +123,6 @@ function RegistrationForm() {
             Female
           </label>
         </div>
-
-        {/* ... (rest of the form fields) ... */}
-
         <button type="submit">Submit</button>
       </form>
     </div>

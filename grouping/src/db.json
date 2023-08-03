@@ -1,7 +1,6 @@
 {
     "users": [
       {
-        "id": 1,
         "firstName": "Mwihaki",
         "lastName": "Doe",
         "dateOfBirth": "1560-01-15",
@@ -13,7 +12,6 @@
         "destination": "New York"
       },
       {
-        "id": 2,
         "firstName": "Lakirr",
         "lastName": "Maynard",
         "dateOfBirth": "1995-07-25",
