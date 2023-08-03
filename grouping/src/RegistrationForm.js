@@ -20,6 +20,7 @@ function RegistrationForm() {
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
       };
     
+       // Event handler to submit the form data to the server
       const handleSubmit = (e) => {
         e.preventDefault();
     
