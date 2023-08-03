@@ -85,6 +85,6 @@ button:disabled {
 
 /* Additional styles for disabled button (optional) */
 .Back-button:disabled {
-  background-color: #c0c0c0; /* Grayed out color for disabled button */
+  background-color: #c0c0c0; 
   cursor: not-allowed;
 }
