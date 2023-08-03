@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, json, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import '../styles/LoginForm.css';
 
 const SignUpForm = () => {
@@ -20,28 +21,22 @@ const SignUpForm = () => {
       username,
       email,
       password,
-    };
-
-    try {
-      // Make a POST request to save the user data to the backend
-      const response = await fetch('http://localhost:8000/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
-      });
-
-      if (response.ok) {
-        console.log('User created successfully!');
-        navigate('/login'); // Navigate to the login page after successful sign up
-      } else {
-        alert('Failed to create user. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error creating user:', error);
-      alert('An error occurred. Please try again.');
     }
+  
+      // Make a POST request to save the user data to db.json
+      fetch('http://localhost:8000/users', {
+        method : "POST",
+        headers : {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form)
+       
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      
+      alert('User created successfully!'); 
+      navigate('/login'); // Navigate to the login page after successful sign up
   };
 
   return (
