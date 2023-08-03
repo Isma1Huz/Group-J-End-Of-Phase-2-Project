@@ -12,44 +12,30 @@ const SignUpForm = () => {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-  
     // Perform form validation here (e.g., check if passwords match)
     if (password !== confirmPassword) {
       alert('Passwords do not match. Please try again.');
       return;
     }
-  
-    const form = {
-      username,
-      email,
-      password,
-    };
-  
+
     try {
-      // Make a POST request to save the user data to db.json
-      const response = await fetch('http://localhost:8000/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
-      });
-  
-      if (!response.ok) {
-        // If the response status is not in the 2xx range, handle the error
-        throw new Error('Failed to create user');
-      }
-  
-      // The user was created successfully
+      const form = {
+        username,
+        email,
+        password,
+      };
+
+      // Make a POST request to save the user data to db.json using axios
+      const response = await axios.post('http://localhost:8000/users', form);
+      console.log(response.data);
+
       alert('User created successfully!');
       navigate('/login'); // Navigate to the login page after successful sign up
     } catch (error) {
-      // Handle any errors that occurred during the fetch request
-      console.error(error);
+      console.error('Error creating user:', error);
       alert('An error occurred while creating the user. Please try again.');
     }
   };
-  
 
 
   return (
