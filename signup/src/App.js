@@ -8,6 +8,7 @@ function App(){
 
   return(
     <div>
+      {/* Rendering signup page */}
       <Signup />
     </div>
   );
