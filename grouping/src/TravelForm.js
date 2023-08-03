@@ -28,7 +28,7 @@ const PaymentPage = () => {
     // Start processing payment
     setIsProcessing(true);
 
-    
+    // Simulate payment processing (here, we use a 2-second delay)
     setTimeout(() => {
       setIsProcessing(false);
       setPaymentSuccess(true);
