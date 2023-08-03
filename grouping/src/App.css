@@ -1,227 +1,84 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins",sans-serif;
-}
-
 body{
+  background-color:#E0D9D9 ;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #E0D9D9;
 }
 
-/* Main container */
-.Container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.Container-card p {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #000;
-  font-family: "Poppins",sans-serif;
-  display: inline-flex;
-}
-
-.Container-card {
-  width: 100%;
+.payment-container {
+  margin: 20px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-
-.Progress-bar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin:4% 0;
-  width:70%;
-} 
-
-.Progress-bar .stage {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.progress-bar .tool-tip{
-  color: #1a1d86;
-  font-weight: 600;
-}
-.stageno{
-  margin: 6% 0;
-  padding: 2% 7%;
-  border-radius: 50%;
-  background-color: #f5f5f9;
-}
-
-/* Styling for the signup form container */
-.signup-form-content {
-  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  background-color: #f9f9f9;
 }
 
-/* Styling for the main content of stage 1 */
-.stage1-content {
-  display: flex;
-  flex-direction: column;
+ h2 {
+  margin-bottom: 20px;
+} *
+
+form div {
+  margin-bottom: 10px;
 }
 
-/* Styling for the button container */
-.button-container {
-  display: flex;
-  align-items: center;
-  margin: 4% 0;
-}
-
-/* Styling for the text fields */
-.text-fields {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 2%;
-  margin: 0 2%;
-  width: 46%;
-  border-radius: 4px;
-  color: black;
-}
-
-.text-fields input {
-  border: none;
-  outline: none;
-  background: inherit;
-  color: black;
-  width: 200%;
-  margin-left: 4%;
-  font-size: 1rem;
-}
-
-.signup-form-container {
-  width: 100%;
-  padding: 0 3%;
-}
-
-.input-placeholder {
-  font-size: 1rem;
-  color: #ccc;
-  margin-left: 4%;
-  width: 200%;
- 
-}
-
-/* Styling for the gender selection section */
-.gender-selection {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-/* Styling for the gender labels */
-.gender-selection label {
-  margin-right: 10px;
-}
-
-/* Styling for the signup form container */
-.signup-form-content {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-/* Styling for the main content of stage 1 */
-.stage1-content {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Styling for text fields */
-.text-fields {
-  margin-bottom: 15px;
-}
-
-/* Styling for input fields */
-.text-fields input[type="text"],
-.text-fields input[type="email"],
-.text-fields input[type="password"] {
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Styling for the button container */
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* Styling for the button container */
-.button-container-2 {
-  display: flex;
-  justify-content: center; 
-}
-
-/* Styling for the button */
-.btn {
-  background-color: black;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: black;
-}
- 
-/* Label styles */
 label {
+  display: block;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
-/* Select styles */
-select {
+input[type="text"],
+button {
   width: 100%;
-  padding: 8px;
-  font-size: 14px;
+  padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #e6f7ff;
+  color: #007bff;
+}
+
+.Payment-container {
+  /* Set the container's styles here (if needed) */
+}
+
+.Back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* Option styles */
-option {
-  padding: 8px;
+/* Styles when the button is hovered */
+.Back-button:hover {
+  background-color: #0056b3; /* Slightly darker blue color on hover */
 }
 
-
-
-
-
+/* Additional styles for disabled button (optional) */
+.Back-button:disabled {
+  background-color: #c0c0c0; /* Grayed out color for disabled button */
+  cursor: not-allowed;
+}

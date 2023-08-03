@@ -2,6 +2,7 @@ import React,{ useState} from "react";
 
 function RegistrationForm() {
 
+  // State to store the form data
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",

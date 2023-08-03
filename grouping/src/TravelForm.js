@@ -1,52 +1,98 @@
 import React, { useState } from 'react';
 
-function TravelForm (state) {
-  const [documentType, setDocumentType] = useState('passport');
-  const [selectedCountry, setSelectedCountry] = useState('');
+const PaymentPage = () => {
+  
+  const [cardNumber, setCardNumber] = useState('');
+  const [cardName, setCardName] = useState('');
+  const [expiryDate, setExpiryDate] = useState('');
+  const [cvv, setCvv] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
 
-  const handleDocumentTypeChange = (event) => {
-    setDocumentType(event.target.value);
+  const handleBackButtonClick = () => {
+    window.history.back(); // Go back to the previous page
   };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const handleCountryChange = (event) => {
-    setSelectedCountry(event.target.value);
+    
+    if (!cardNumber || !cardName || !expiryDate || !cvv) {
+      alert('Please fill in all the required fields.');
+      return;
+    }
+
+    
+    setIsProcessing(true);
+
+    
+    setTimeout(() => {
+      setIsProcessing(false);
+      setPaymentSuccess(true);
+    }, 2000);
   };
-
-    const handleButtonClick = () => {
-        console.log('Button clicked!');
-      };
 
   return (
-    <div>
-      <div>
-        <label htmlFor="documentType">Travel Document Type:</label>
-        <select id="documentType" value={documentType} onChange={handleDocumentTypeChange}>
-          <option value="passport">Passport</option>
-          <option value="visa">Visa</option>
-          <option value="idCard">ID Card</option>
-        </select>
-      </div>
-
-      <div>
-        <label htmlFor="country">Select Country:</label>
-        <select id="country" value={selectedCountry} onChange={handleCountryChange}>
-          <option value="">Select a country</option>
-          <option value="usa">United States</option>
-          <option value="uk">United Kingdom</option>
-          <option value="france">France</option>
-          <option value="germany">Germany</option>
-          <option value="italy">Italy</option>
-        </select>
-      </div>
-      <div className="button-container-2">
-        <button id="button" type="button" className="btn btn" onClick={handleButtonClick}>
-          Continue
-        </button>
-      </div>
-          
+    <div className='Payment-container'>
+      <h2>Payment Details</h2>
+      {/* Back button */}
+      <button className='Back-button' onClick={handleBackButtonClick}>
+        Back
+      </button>
+      {paymentSuccess ? (
+        <div>
+          <p>Payment successful!</p>
+          <p>Your flight tickets have been booked.</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="cardNumber">Card Number:</label>
+            <input
+              type="text"
+              id="cardNumber"
+              value={cardNumber}
+              onChange={(e) => setCardNumber(e.target.value)}
+              placeholder="Enter card number"
+            />
+          </div>
+          <div>
+            <label htmlFor="cardName">Cardholder's Name:</label>
+            <input
+              type="text"
+              id="cardName"
+              value={cardName}
+              onChange={(e) => setCardName(e.target.value)}
+              placeholder="Enter cardholder's name"
+            />
+          </div>
+          <div>
+            <label htmlFor="expiryDate">Expiry Date:</label>
+            <input
+              type="text"
+              id="expiryDate"
+              value={expiryDate}
+              onChange={(e) => setExpiryDate(e.target.value)}
+              placeholder="MM/YY"
+            />
+          </div>
+          <div>
+            <label htmlFor="cvv">CVV:</label>
+            <input
+              type="text"
+              id="cvv"
+              value={cvv}
+              onChange={(e) => setCvv(e.target.value)}
+              placeholder="Enter CVV"
+            />
+          </div>
+          {<button type="submit" disabled={isProcessing}>
+            {isProcessing ? 'Processing...' : 'Pay Now'}
+          </button> }
+        </form>
+      )}
     </div>
   );
 };
 
-
-export default TravelForm;
+export default PaymentPage;
