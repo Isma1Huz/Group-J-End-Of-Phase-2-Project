@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const PaymentPage = () => {
   
+  // State to store form data and processing status
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
   const [expiryDate, setExpiryDate] = useState('');
