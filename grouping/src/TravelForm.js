@@ -15,6 +15,7 @@ const PaymentPage = () => {
     window.history.back(); // Go back to the previous page
   };
   
+  // Function to handle the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
