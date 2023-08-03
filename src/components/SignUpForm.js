@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import '../styles/LoginForm.css';
 
 const SignUpForm = () => {
@@ -17,26 +16,33 @@ const SignUpForm = () => {
       alert('Passwords do not match. Please try again.');
       return;
     }
+    const form = {
+      username,
+      email,
+      password,
+    };
 
     try {
-      const form = {
-        username,
-        email,
-        password,
-      };
+      // Make a POST request to save the user data to the backend
+      const response = await fetch('http://localhost:8000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
 
-      // Make a POST request to save the user data to db.json using axios
-      const response = await axios.post('http://localhost:8000/users', form);
-      console.log(response.data);
-
-      alert('User created successfully!');
-      navigate('/login'); // Navigate to the login page after successful sign up
+      if (response.ok) {
+        console.log('User created successfully!');
+        navigate('/login'); // Navigate to the login page after successful sign up
+      } else {
+        alert('Failed to create user. Please try again.');
+      }
     } catch (error) {
       console.error('Error creating user:', error);
-      alert('An error occurred while creating the user. Please try again.');
+      alert('An error occurred. Please try again.');
     }
   };
-
 
   return (
     <div className="login-form">
@@ -85,7 +91,7 @@ const SignUpForm = () => {
         <button type="submit">Sign Up</button>
       </form>
       <p>
-        Already have an account? <Link to="/">Login</Link> 
+        Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
   );
