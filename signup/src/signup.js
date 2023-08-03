@@ -91,7 +91,6 @@ function Signup() {
           value={formData.email}
           onChange={handleChange}
           required
-          
         />
       </div>
 
@@ -103,8 +102,7 @@ function Signup() {
           name="password"
           value={formData.password}
           onChange={handleChange}
-        
-          
+          required
         />
       </div>
 
