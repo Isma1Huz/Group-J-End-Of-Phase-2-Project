@@ -8,6 +8,8 @@ function App() {
     <div className="App">
        {/* Render the RegistrationForm component */}
       <RegistrationForm />
+
+      {/* Render the TravelForm component */} 
       <TravelForm />
     </div>
   )
