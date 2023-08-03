@@ -25,7 +25,7 @@ const PaymentPage = () => {
       return;
     }
 
-    
+    // Start processing payment
     setIsProcessing(true);
 
     
