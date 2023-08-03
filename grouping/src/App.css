@@ -54,6 +54,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
+/* Styles for success message */
 .success-message {
   margin-top: 20px;
   padding: 10px;
