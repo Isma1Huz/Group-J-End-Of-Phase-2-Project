@@ -1,11 +1,12 @@
 import React from "react";
-import './App.css';
+import Landing from './Pages/LandingPage/Landing';
 import PaymentPage from "./PaymentPage";
 
 function App() {
   return (
     <div className="App">
      <PaymentPage />
+      <Landing/>
     </div>
   );
 }
