@@ -32,6 +32,8 @@ label {
   font-weight: bold;
 }
 
+
+/* Input styles */
 input[type="text"],
 button {
   width: 100%;
