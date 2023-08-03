@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, json, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/LoginForm.css';
 
@@ -22,21 +22,20 @@ const SignUpForm = () => {
       email,
       password,
     }
-  
-      // Make a POST request to save the user data to db.json
-      fetch('http://localhost:8000/users', {
-        method : "POST",
-        headers : {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form)
-       
-      })
+
+    // Make a POST request to save the user data to db.json
+    fetch('http://localhost:8000/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form)
+    })
       .then(response => response.json())
       .then(data => console.log(data))
-      
-      alert('User created successfully!'); 
-      navigate('/login'); // Navigate to the login page after successful sign up
+
+    alert('User created successfully!');
+    navigate('/login'); // Navigate to the login page after successful sign up
   };
 
   return (
