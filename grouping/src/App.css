@@ -80,7 +80,7 @@ button:disabled {
 
 /* Styles when the button is hovered */
 .Back-button:hover {
-  background-color: #0056b3; /* Slightly darker blue color on hover */
+  background-color: #0056b3; 
 }
 
 /* Additional styles for disabled button (optional) */
