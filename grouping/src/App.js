@@ -6,6 +6,7 @@ import TravelForm from './TravelForm';
 function App() {
   return (
     <div className="App">
+       {/* Render the RegistrationForm component */}
       <RegistrationForm />
       <TravelForm />
     </div>
