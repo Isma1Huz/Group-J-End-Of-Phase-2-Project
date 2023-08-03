@@ -10,6 +10,7 @@ const PaymentPage = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
+  // Function to handle the back button click, go back to the previous page
   const handleBackButtonClick = () => {
     window.history.back(); // Go back to the previous page
   };
