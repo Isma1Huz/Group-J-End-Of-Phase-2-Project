@@ -22,6 +22,7 @@ body{
 
 #Names {
   display: flex;
+  margin-top: 25px;
 }
 
 #firstname {
