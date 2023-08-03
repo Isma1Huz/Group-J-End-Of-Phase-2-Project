@@ -14,6 +14,7 @@ function RegistrationForm() {
         confirmPassword: "",
       });
     
+      // Event handler to update the form data when input fields change
       const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
