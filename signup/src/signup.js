@@ -51,6 +51,7 @@ function Signup() {
 
    <div id="container">
     <form id ="signup-form" onSubmit={handleSubmit}>
+
       <h2 id="title">Sign Up</h2>
 
       <div id="Names">
@@ -63,6 +64,7 @@ function Signup() {
           name="firstname"
           value={formData.firstname}
           onChange={handleChange}
+          required
         />
       </div>
     
@@ -89,6 +91,7 @@ function Signup() {
           value={formData.email}
           onChange={handleChange}
           
+          
         />
       </div>
 
@@ -100,6 +103,7 @@ function Signup() {
           name="password"
           value={formData.password}
           onChange={handleChange}
+        
           
         />
       </div>
