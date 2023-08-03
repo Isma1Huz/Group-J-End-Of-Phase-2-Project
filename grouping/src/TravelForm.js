@@ -19,7 +19,7 @@ const PaymentPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
+     // Check if all the fields are filled in
     if (!cardNumber || !cardName || !expiryDate || !cvv) {
       alert('Please fill in all the required fields.');
       return;
