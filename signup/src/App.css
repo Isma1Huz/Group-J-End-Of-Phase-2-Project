@@ -3,6 +3,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 #container {
   border: 2px solid #ccc;
@@ -12,6 +13,7 @@ body{
   border-radius: 10%;
   height: 400px;
   background-color: #51bcc2;
+  
 }
 
 #title {
