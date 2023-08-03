@@ -35,7 +35,7 @@ const LoginForm = () => {
     <div className="login-form">
       <h3> Welcome to Travelwings!</h3>
       <h2>Login</h2>
-      <h4>Please Enter Your Details</h4>
+      <h4>Please Enter Your Details;</h4>
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label htmlFor="username">Username:</label>
