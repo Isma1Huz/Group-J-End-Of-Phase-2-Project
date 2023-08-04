@@ -1,0 +1,19 @@
+{
+    "flights": [
+      {
+        "id": 1,
+        "name": "Kisumu",
+        "price": 8000
+      },
+      {
+        "id": 2,
+        "name": "Mombasa",
+        "price": 5000
+      },
+      {
+        "id": 3,
+        "name": "Eldoret",
+        "price": 4050
+      }
+    ]
+  }
