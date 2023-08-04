@@ -1,12 +1,17 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import Link here
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import ForgotPasswordForm from './components/ForgotPasswordForm';
+import Landing from './Pages/LandingPage/Landing';
 import './App.css';
 
 const App = () => {
   return (
+
+    <>
+    <Landing/>
     <Router>
       <div className="app">
         <header>
@@ -31,7 +36,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
-  );
-};
+    </>)
+}
 
-export default App;
+
