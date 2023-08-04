@@ -1,5 +1,8 @@
 
+
 import React from 'react';
+import Landing from './Pages/LandingPage/Landing';
+import PaymentPage from "./PaymentPage";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import Link here
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
@@ -11,7 +14,8 @@ const App = () => {
   return (
 
     <>
-    <Landing/>
+     <PaymentPage />
+      <Landing/>
     <Router>
       <div className="app">
         <header>
