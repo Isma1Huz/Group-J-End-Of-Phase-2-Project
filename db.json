@@ -1,43 +1,19 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "kipngenoh",
-      "email": "kipngenoh@example.com",
-      "password": "123"
-    },
-    {
-      "id": 2,
-      "username": "johndoe",
-      "email": "johndoe@example.com",
-      "password": "456"
-    },
-    {
-      "username": "john",
-      "email": "kipropaaron56@gmail.com",
-      "password": "1111",
-      "id": 3
-    },
-    {
-      "username": "john",
-      "email": "kipropaaron56@gmail.com",
-      "password": "z",
-      "id": 4
-    },
-    {
-      "username": "john",
-      "email": "kiproprotich05@gmail.com",
-      "password": "v",
-      "id": 5
-    },
-    {
-      "username": "ann",
-      "email": "alexkiprop193@yahoo.com",
-      "password": "1",
-      "id": 6
-    }
-  ]
-}
-   
-   
-
+    "flights": [
+      {
+        "id": 1,
+        "name": "Kisumu",
+        "price": 8000
+      },
+      {
+        "id": 2,
+        "name": "Mombasa",
+        "price": 5000
+      },
+      {
+        "id": 3,
+        "name": "Eldoret",
+        "price": 4050
+      }
+    ]
+  }
