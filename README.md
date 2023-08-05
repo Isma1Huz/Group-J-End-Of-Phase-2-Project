@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Group J End of phase 2 project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This is a group project for five people
+   
+______________________________________________________________________________________________________________________________________________
 
-## Available Scripts
+### Requirements
+- Now that you've learned the fundamentals of React, it's time to practice and expand your skills by making a React project from scratch!
 
-In the project directory, you can run:
+- This assignment is open-ended when it comes to the actual content. You are free to create whatever you'd like, as long as it incorporates the requirements listed in these instructions.
 
-### `npm start`
+### Requirements
+- You must make a single page application (only one index.html file) using create-react-app
+- Your app should use at least 5 components in a way that keeps your code well organized
+- There should be at least 3 client-side routes using react-routerLinks to an external site.
+- Use the RESTful API that has been provided by your Technical Mentor.
+- Use the following docLinks to an external site. for reference to the remaining MANDATORY requirements.
+ 
+______________________________________________________________________________________________________________________________________________
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Problem Statememt
+- We are tasked with creating a React website for an airplane ticket booking platform. The website should allow users to search for available flights based on their desired departure and destination cities, select a suitable flight, provide passenger information, and make a booking. The website should also provide users with the option to view their booking details and manage their bookings.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+______________________________________________________________________________________________________________________________________________
 
-### `npm test`
+### Solutions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- We will be  building a React website for an airplane ticket booking platform. The website will allow users to search for available flights based on their desired departure and destination cities, select a suitable flight, provide passenger information, and make a booking. Users will also have the option to view their booking details and manage their bookings
+______________________________________________________________________________________________________________________________________________
 
-### `npm run build`
+### Implementation
+- Used Trello to brainstorm our design idea
+- Used Figma to create the UI design
+- Used Github to collaborate on coding
+- Used React.js to implement our project
+- Used Netlify to deploy 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Host platform 
+- Github 
+#### Author
+![isma (3)](https://github.com/Isma1Huz/Portfolio/assets/132744360/226c966f-524a-40a4-ad72-2c099d44a8b8)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Ismael Hussein**
+- **ismaelhuz45@gmail.com**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### The MIT License (MIT)
 
-### `npm run eject`
+#### Copyright (c) 2023 Ismael Hussein
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
